@@ -17,7 +17,7 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
-        <input className= "search" placeholder="Enter a city" type="text" onChange={(e) => setQuery(e.target.value)} onKeyDown={(e) => {
+        <input className= "search" placeholder="Enter a city" value={query} type="text" onChange={(e) => setQuery(e.target.value)} onKeyDown={(e) => {
           if (e.key === "Enter") {
              cityDataHandler()
           }
